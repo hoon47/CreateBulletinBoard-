@@ -39,8 +39,8 @@
 		<div class="collapse navbar-collapse"
 			id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="main.jsp">메인</a></li>
-				<li><a href="bbs.jsp">게시판</a></li>
+				<li><a href="main.jsp">메인</a></li>
+				<li class="active"><a href="bbs.jsp">게시판</a></li>
 			</ul>
 			<%
 			//로그인 된 상태가 아니라면
@@ -74,7 +74,33 @@
 			%>
 		</div>
 	</nav>
-
+	<div class="container">
+		<!-- table-striped <- 홀수 짝수 색 번갈아가면서 보여주는 요소 -->
+		<table class="table table-striped" style="text-align:center; border:1px solid #dddddd">
+			<!-- thead 는 테이블의 제목부분 가장 윗줄에 해당 -->
+			<thead>
+				<tr>
+					<th style="background-color: #eeeeee; text-align: center;">번호</th>
+					<th style="background-color: #eeeeee; text-align: center;">제목</th>
+					<th style="background-color: #eeeeee; text-align: center;">작성자</th>
+					<th style="background-color: #eeeeee; text-align: center;">작성일</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>안녕하세요</td>
+					<td>홍길동</td>
+					<td>22-07-24</td>
+					
+				</tr>
+			</tbody>
+		</table>
+							<!-- pull-right <- 버튼이 오른쪽으로 위치하게함 -->
+		<a href="write.jsp" class="btn btn-primary pull-right">글쓰기</a>
+	</div>	
+	
+	
 	<!-- 애니메이션을 담당하게될 자바스크립트 참조 -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<!-- 부트스트립에서 기본적으로 제공하는 자바스크립트 파일 참조 -->

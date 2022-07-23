@@ -1,5 +1,4 @@
-//자바빈즈 - 유저클래스 만들었음
-
+//자바빈즈 - 유저클래스
 package user;
 
 public class User {
